@@ -1,3 +1,7 @@
+body {
+  background-color: #e99930;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -11,7 +15,8 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: #faebd7;
+  align-content: center;
 }
 
 .form-group {
