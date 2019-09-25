@@ -101,6 +101,31 @@ var orm = {
       cb(result);
     });
   }
+
+  /*
+    join: function(table, objColVals, objColVals2, newName, cb) {
+    var queryString = " " + table;
+
+    queryString += " SELECT CONCAT";
+    queryString += objToSql(objColVals1);
+    queryString += "AS";
+    queryString += newName;
+    queryString += " AS ";
+    queryString += newTable;
+
+    console.log(queryString);
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
+  "SELECT CONCAT(myguests.firstname,' ',myguests.lastname) AS name, myguests.email, messages.message 
+    From myguests 
+    INNER JOIN messages 
+    ON myguests.id = messages.id";
+  */
 };
 
 // Export the orm object for the model (cat.js).
